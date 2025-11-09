@@ -1,0 +1,201 @@
+id,zona_id,nombre,tipo,costo_hormigas,estado,hora_deteccion,hora_resolucion
+1,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:31:31.901048,
+2,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:31:31.906719,
+3,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:31:32.005449,
+4,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:31:32.030316,
+5,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:31:32.045789,
+6,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T19:31:32.057847,2025-11-08T19:31:32.067615
+7,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T19:31:32.071013,2025-11-08T19:31:32.083490
+8,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:31:32.106402,
+9,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:32:31.266200,
+10,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:32:31.270668,
+11,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:32:31.380326,
+12,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:32:31.400739,
+13,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:32:31.418944,
+14,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T19:32:31.432929,2025-11-08T19:32:31.451871
+15,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T19:32:31.456837,2025-11-08T19:32:31.471063
+16,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:32:31.497773,
+17,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:33:43.045360,
+18,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:33:43.048389,
+19,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:33:43.080165,
+20,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:33:43.105845,
+21,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:33:43.117999,
+22,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T19:33:43.129795,2025-11-08T19:33:43.144840
+23,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T19:33:43.148528,2025-11-08T19:33:43.160487
+24,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:33:43.186843,
+25,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:38:42.510957,
+26,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:38:42.515075,
+27,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:38:42.545888,
+28,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:38:42.572138,
+29,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:38:42.587045,
+30,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T19:38:42.598558,2025-11-08T19:38:42.614531
+31,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T19:38:42.614531,2025-11-08T19:38:42.634264
+32,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:38:42.663186,
+33,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:45:22.140080,
+34,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:45:22.144920,
+35,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:45:22.177263,
+36,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:45:22.219963,
+37,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:45:22.242591,
+38,1,Amenaza resuelta,SERPIENTE,6,activa,2025-11-08T19:45:22.256050,
+39,1,Amenaza persistencia,AGUILA,3,activa,2025-11-08T19:45:22.322648,
+40,1,Amenaza ya resuelta,AGUILA,4,activa,2025-11-08T19:45:22.348588,
+41,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:45:22.376214,
+42,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T19:45:22.389754,2025-11-08T19:45:22.412381
+43,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T19:45:22.422019,
+44,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:46:13.944951,
+45,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:46:13.953021,
+46,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:46:13.981768,
+47,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:46:14.015779,
+48,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:46:14.030451,
+49,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T19:46:14.042924,2025-11-08T19:46:14.064110
+50,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T19:46:14.065609,2025-11-08T19:46:14.084745
+51,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T19:46:14.107980,2025-11-08T19:46:14.125884
+52,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:46:14.151131,
+53,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T19:46:14.169675,2025-11-08T19:46:14.190345
+54,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T19:46:14.201490,
+55,1,Águila cazadora,AGUILA,5,activa,2025-11-08T19:47:26.917366,
+56,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T19:47:26.931553,
+57,1,Amenaza test,AGUILA,5,activa,2025-11-08T19:47:26.966624,
+58,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T19:47:26.995628,
+59,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T19:47:27.010853,
+60,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T19:47:27.022106,2025-11-08T19:47:27.043427
+61,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T19:47:27.049518,2025-11-08T19:47:27.073689
+62,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T19:47:27.087293,2025-11-08T19:47:27.106934
+63,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T19:47:27.132641,
+64,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T19:47:27.155197,2025-11-08T19:47:27.172581
+65,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T19:47:27.185946,
+66,1,Águila cazadora,AGUILA,5,activa,2025-11-08T20:00:44.406707,
+67,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T20:00:44.410604,
+68,1,Amenaza test,AGUILA,5,activa,2025-11-08T20:00:44.447620,
+69,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T20:00:44.474810,
+70,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T20:00:44.486389,
+71,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T20:00:44.500263,2025-11-08T20:00:44.521870
+72,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T20:00:44.524555,2025-11-08T20:00:44.547839
+73,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T20:00:44.559268,2025-11-08T20:00:44.577347
+74,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T20:00:44.600617,
+75,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T20:00:44.625284,2025-11-08T20:00:44.638007
+76,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T20:00:44.652475,
+77,1,Águila cazadora,AGUILA,5,activa,2025-11-08T20:22:14.252343,
+78,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T20:22:14.258620,
+79,1,Amenaza test,AGUILA,5,activa,2025-11-08T20:22:14.289345,
+80,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T20:22:14.320147,
+81,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T20:22:14.342382,
+82,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T20:22:14.363627,2025-11-08T20:22:14.381685
+83,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T20:22:14.397093,2025-11-08T20:22:14.416840
+84,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T20:22:14.429930,2025-11-08T20:22:14.449860
+85,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T20:22:14.474633,
+86,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T20:22:14.499923,2025-11-08T20:22:14.517506
+87,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T20:22:14.527353,
+88,1,Águila cazadora,AGUILA,5,activa,2025-11-08T20:39:36.654550,
+89,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T20:39:36.669985,
+90,1,Amenaza test,AGUILA,5,activa,2025-11-08T20:39:36.709935,
+91,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T20:39:36.744449,
+92,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T20:39:36.762898,
+93,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T20:39:36.780389,2025-11-08T20:39:36.806890
+94,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T20:39:36.813314,2025-11-08T20:39:36.833868
+95,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T20:39:36.856962,2025-11-08T20:39:36.878892
+96,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T20:39:36.903769,
+97,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T20:39:36.938830,2025-11-08T20:39:36.958837
+98,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T20:39:36.972381,
+99,1,Águila cazadora,AGUILA,5,activa,2025-11-08T20:50:44.331415,
+100,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T20:50:44.345699,
+101,1,Amenaza test,AGUILA,5,activa,2025-11-08T20:50:44.434966,
+102,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T20:50:44.481165,
+103,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T20:50:44.507654,
+104,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T20:50:44.525785,2025-11-08T20:50:44.557849
+105,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T20:50:44.562082,2025-11-08T20:50:44.595715
+106,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T20:50:44.618350,2025-11-08T20:50:44.643853
+107,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T20:50:44.678798,
+108,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T20:50:44.725517,2025-11-08T20:50:44.750574
+109,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T20:50:44.762891,
+110,1,Águila cazadora,AGUILA,5,activa,2025-11-08T20:53:48.103154,
+111,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T20:53:48.111239,
+112,1,Amenaza test,AGUILA,5,activa,2025-11-08T20:53:48.158668,
+113,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T20:53:48.207189,
+114,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T20:53:48.231876,
+115,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T20:53:48.248499,2025-11-08T20:53:48.280239
+116,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T20:53:48.286429,2025-11-08T20:53:48.315861
+117,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T20:53:48.340195,2025-11-08T20:53:48.363323
+118,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T20:53:48.402234,
+119,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T20:53:48.455332,2025-11-08T20:53:48.478382
+120,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T20:53:48.494932,
+121,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:23:55.596362,
+122,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:23:55.616715,
+123,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:23:55.663798,
+124,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:23:55.698519,
+125,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T22:23:55.719926,
+126,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T22:23:55.735922,2025-11-08T22:23:55.772363
+127,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T22:23:55.777385,2025-11-08T22:23:55.810987
+128,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T22:23:55.829907,2025-11-08T22:23:55.848721
+129,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T22:23:55.874217,
+130,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T22:23:55.907072,2025-11-08T22:23:55.926271
+131,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:23:55.938619,
+132,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:35:17.646878,
+133,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:35:17.666005,
+134,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:35:17.699582,
+135,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:35:17.733126,
+136,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T22:35:17.749077,
+137,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T22:35:17.763802,2025-11-08T22:35:17.811006
+138,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T22:35:17.822556,2025-11-08T22:35:17.855950
+139,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T22:35:17.874609,2025-11-08T22:35:17.893796
+140,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T22:35:17.924328,
+141,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T22:35:17.953488,2025-11-08T22:35:17.975662
+142,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:35:17.989573,
+143,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:45:18.400075,
+144,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:45:18.406903,
+145,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:45:18.440272,
+146,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:45:18.481000,
+147,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T22:45:18.497419,
+148,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T22:45:18.513309,2025-11-08T22:45:18.540573
+149,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T22:45:18.543762,2025-11-08T22:45:18.572645
+150,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T22:45:18.590468,2025-11-08T22:45:18.607151
+151,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T22:45:18.636644,
+152,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T22:45:18.668755,2025-11-08T22:45:18.693826
+153,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:45:18.707347,
+154,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:54:47.606819,
+155,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:54:47.615820,
+156,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:54:47.649319,
+157,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:54:47.705526,
+158,1,Amenaza combate,AGUILA,4,activa,2025-11-08T22:54:48.049049,
+159,1,Amenaza resuelta,SERPIENTE,6,activa,2025-11-08T22:54:48.220208,
+160,1,Amenaza persistencia,AGUILA,3,activa,2025-11-08T22:54:48.390590,
+161,1,Amenaza ya resuelta,AGUILA,4,activa,2025-11-08T22:54:48.710870,
+162,1,Amenaza eliminar,AGUILA,5,activa,2025-11-08T22:54:48.884670,
+163,1,Amenaza en batalla,SERPIENTE,8,activa,2025-11-08T22:54:49.052424,
+164,1,Amenaza transición válida,SERPIENTE,6,activa,2025-11-08T22:54:49.353850,
+165,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:54:49.519991,
+166,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:56:02.387541,
+167,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:56:02.403795,
+168,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:56:02.436243,
+169,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:56:02.476587,
+170,1,Amenaza combate,AGUILA,4,activa,2025-11-08T22:56:02.494749,
+171,1,Amenaza resuelta,SERPIENTE,6,activa,2025-11-08T22:56:02.711732,
+172,1,Amenaza persistencia,AGUILA,3,activa,2025-11-08T22:56:02.868566,
+173,1,Amenaza ya resuelta,AGUILA,4,activa,2025-11-08T22:56:03.044378,
+174,1,Amenaza eliminar,AGUILA,5,activa,2025-11-08T22:56:03.206061,
+175,1,Amenaza en batalla,SERPIENTE,8,activa,2025-11-08T22:56:03.385782,
+176,1,Amenaza transición válida,SERPIENTE,6,activa,2025-11-08T22:56:03.705819,
+177,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:56:03.879497,
+178,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:56:41.367252,
+179,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:56:41.374121,
+180,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:56:41.415604,
+181,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:56:41.449330,
+182,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T22:56:41.466008,
+183,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T22:56:41.483163,2025-11-08T22:56:41.507790
+184,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T22:56:41.513096,2025-11-08T22:56:41.539679
+185,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T22:56:41.557323,2025-11-08T22:56:41.577005
+186,1,Amenaza eliminar,AGUILA,5,activa,2025-11-08T22:56:41.589604,
+187,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T22:56:41.813365,
+188,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T22:56:41.977731,2025-11-08T22:56:41.997657
+189,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:56:42.017814,
+190,1,Águila cazadora,AGUILA,5,activa,2025-11-08T22:57:13.354600,
+191,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-08T22:57:13.363015,
+192,1,Amenaza test,AGUILA,5,activa,2025-11-08T22:57:13.393491,
+193,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-08T22:57:13.429660,
+194,1,Amenaza combate,AGUILA,4,en_combate,2025-11-08T22:57:13.443020,
+195,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-08T22:57:13.459002,2025-11-08T22:57:13.482328
+196,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-08T22:57:13.483773,2025-11-08T22:57:13.506895
+197,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-08T22:57:13.531966,2025-11-08T22:57:13.556152
+198,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T22:57:13.590581,
+199,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T22:57:13.626333,2025-11-08T22:57:13.643821
+200,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:57:13.651977,
