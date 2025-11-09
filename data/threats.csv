@@ -199,3 +199,36 @@ id,zona_id,nombre,tipo,costo_hormigas,estado,hora_deteccion,hora_resolucion
 198,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-08T22:57:13.590581,
 199,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-08T22:57:13.626333,2025-11-08T22:57:13.643821
 200,1,Amenaza transición inválida,ARANA,3,activa,2025-11-08T22:57:13.651977,
+201,1,Águila cazadora,AGUILA,5,activa,2025-11-09T20:59:59.837701,
+202,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-09T20:59:59.842070,
+203,1,Amenaza test,AGUILA,5,activa,2025-11-09T20:59:59.857190,
+204,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-09T20:59:59.875809,
+205,1,Amenaza combate,AGUILA,4,en_combate,2025-11-09T20:59:59.884822,
+206,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-09T20:59:59.892936,2025-11-09T20:59:59.901117
+207,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-09T20:59:59.904947,2025-11-09T20:59:59.913242
+208,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-09T20:59:59.921592,2025-11-09T20:59:59.929916
+209,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-09T20:59:59.943173,
+210,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-09T20:59:59.956065,2025-11-09T20:59:59.964057
+211,1,Amenaza transición inválida,ARANA,3,activa,2025-11-09T20:59:59.969845,
+212,1,Águila cazadora,AGUILA,5,activa,2025-11-09T21:59:02.508725,
+213,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-09T21:59:02.513188,
+214,1,Amenaza test,AGUILA,5,activa,2025-11-09T21:59:02.527406,
+215,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-09T21:59:02.546273,
+216,1,Amenaza combate,AGUILA,4,en_combate,2025-11-09T21:59:02.554978,
+217,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-09T21:59:02.562938,2025-11-09T21:59:02.571548
+218,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-09T21:59:02.575501,2025-11-09T21:59:02.584056
+219,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-09T21:59:02.592760,2025-11-09T21:59:02.601498
+220,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-09T21:59:02.614955,
+221,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-09T21:59:02.628966,2025-11-09T21:59:02.637270
+222,1,Amenaza transición inválida,ARANA,3,activa,2025-11-09T21:59:02.643196,
+223,1,Águila cazadora,AGUILA,5,activa,2025-11-09T22:00:57.449757,
+224,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-09T22:00:57.454404,
+225,1,Amenaza test,AGUILA,5,activa,2025-11-09T22:00:57.469425,
+226,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-09T22:00:57.488291,
+227,1,Amenaza combate,AGUILA,4,en_combate,2025-11-09T22:00:57.497119,
+228,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-09T22:00:57.505444,2025-11-09T22:00:57.514051
+229,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-09T22:00:57.518288,2025-11-09T22:00:57.527095
+230,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-09T22:00:57.536545,2025-11-09T22:00:57.545461
+231,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-09T22:00:57.559744,
+232,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-09T22:00:57.573551,2025-11-09T22:00:57.582292
+233,1,Amenaza transición inválida,ARANA,3,activa,2025-11-09T22:00:57.588555,
