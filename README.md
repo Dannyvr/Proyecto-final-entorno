@@ -45,3 +45,97 @@ El entorno desarrollado cumple con las siguientes tareas:
 - **Actualizar amenazas**: Permite actualizar el estado de la amenaza: sin atacar y en estado de ataque.
 - **Eliminar amenazas**: Permite eliminar amenazas y se rebajan del entorno.
 
+---
+
+## 🚀 Cómo Usar el Sistema
+
+### Prerrequisitos
+
+Asegúrate de tener instalado:
+- Python 3.11 o superior
+- pip (gestor de paquetes de Python)
+
+### Instalación de Dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+### Iniciar el Servidor API
+
+Para ejecutar el servidor de desarrollo de FastAPI:
+
+```bash
+uvicorn main:app --reload
+```
+
+El servidor se iniciará en: `http://127.0.0.1:8000`
+
+### Acceder a la Documentación Interactiva de la API
+
+FastAPI genera automáticamente documentación interactiva (Swagger UI):
+
+**Swagger UI**: http://127.0.0.1:8000/docs
+
+**ReDoc**: http://127.0.0.1:8000/redoc
+
+Desde Swagger UI puedes:
+- Ver todos los endpoints disponibles
+- Probar cada endpoint directamente desde el navegador
+- Ver los esquemas de datos (request/response)
+- Revisar los códigos de estado HTTP
+
+### Ejecutar las Pruebas
+
+Para ejecutar toda la suite de pruebas:
+
+```bash
+python -m pytest tests/ -v
+```
+
+Para ejecutar solo las pruebas de amenazas:
+
+```bash
+python -m pytest tests/test_threats.py -v
+```
+
+Para ejecutar con reporte de cobertura (primero instala pytest-cov):
+
+```bash
+pip install pytest-cov
+python -m pytest tests/ --cov=. --cov-report=html
+```
+
+Luego ejecuta 
+```bash
+Start-Process "htmlcov\index.html"
+```
+para ver el reporte detallado.
+
+
+### Ejemplos de Uso de la API
+
+```
+proyecto-final-entorno/
+├── data/                    # Archivos CSV de persistencia
+├── models/                  # Modelos de dominio
+├── schemas/                 # Esquemas Pydantic para validación
+├── repositories/            # Capa de acceso a datos (CSV)
+├── endpoints/               # Controladores de API (FastAPI)
+├── tests/                   # Suite de pruebas (pytest)
+├── main.py                  # Punto de entrada de la aplicación
+├── requirements.txt         # Dependencias del proyecto
+└── README.md               # Este archivo
+```
+
+---
+
+## 🧪 Metodología TDD
+
+Este proyecto sigue estrictamente la metodología **Test-Driven Development (TDD)**:
+
+1. **🔴 Red**: Escribir una prueba que falla
+2. **🟢 Green**: Escribir el código mínimo para que la prueba pase
+3. **🔵 Refactor**: Mejorar el código manteniendo las pruebas verdes
+
+
