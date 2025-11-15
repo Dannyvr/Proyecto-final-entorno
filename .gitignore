@@ -1,6 +1,13 @@
 # Ignorar carpeta Contexto
 Contexto/
 
+# Ignorar archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar entornos virtuales
 venv/
 
 # Python cache
