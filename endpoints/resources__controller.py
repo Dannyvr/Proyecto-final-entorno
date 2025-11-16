@@ -88,11 +88,15 @@ async def actualizar_recurso(resource_id: int, update_data: ResourceUpdate):
 
 @router.delete("/{resource_id}")
 async def eliminar_recurso(resource_id: int):
+    """Elimina un recurso por ID"""
     result = resource_repo.delete(resource_id)
+
     if result == "deleted":
-        return {"message": "Recurso eliminado"}
-    if result == "never_existed":
-        # Según T19: devolver 200 si nunca existió
-        return {"message": f"El recurso {resource_id} no existe"}
-    # already_deleted -> según T20 devolver 404
-    raise HTTPException(status_code=404, detail={"error": f"El recurso {resource_id} ya fue eliminado"})
+        return {"message": "Recurso eliminado exitosamente"}
+
+    if result == "already_deleted":
+        # Reintento de eliminación -> 404 según tests (T20)
+        raise HTTPException(status_code=404, detail={"error": f"El recurso {resource_id} ya fue eliminado"})
+
+    # 'never_existed' -> idempotente, devolver 200 (T19)
+    return {"message": "Recurso no existe (idempotente)"}
