@@ -9,4 +9,13 @@ __pycache__/
 
 # Ignorar entornos virtuales
 venv/
-.venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python

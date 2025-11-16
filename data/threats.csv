@@ -232,3 +232,25 @@ id,zona_id,nombre,tipo,costo_hormigas,estado,hora_deteccion,hora_resolucion
 231,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-09T22:00:57.559744,
 232,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-09T22:00:57.573551,2025-11-09T22:00:57.582292
 233,1,Amenaza transición inválida,ARANA,3,activa,2025-11-09T22:00:57.588555,
+234,1,Águila cazadora,AGUILA,5,activa,2025-11-14T22:20:52.144858,
+235,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-14T22:20:52.163311,
+236,1,Amenaza test,AGUILA,5,activa,2025-11-14T22:20:52.212088,
+237,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-14T22:20:52.264523,
+238,1,Amenaza combate,AGUILA,4,en_combate,2025-11-14T22:20:52.287577,
+239,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-14T22:20:52.306775,2025-11-14T22:20:52.338326
+240,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-14T22:20:52.338326,2025-11-14T22:20:52.371771
+241,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-14T22:20:52.392758,2025-11-14T22:20:52.419223
+242,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-14T22:20:52.453447,
+243,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-14T22:20:52.497078,2025-11-14T22:20:52.526105
+244,1,Amenaza transición inválida,ARANA,3,activa,2025-11-14T22:20:52.534308,
+245,1,Águila cazadora,AGUILA,5,activa,2025-11-14T22:25:52.459892,
+246,2,Serpiente venenosa,SERPIENTE,8,activa,2025-11-14T22:25:52.478362,
+247,1,Amenaza test,AGUILA,5,activa,2025-11-14T22:25:52.528480,
+248,1,Amenaza detalle,SERPIENTE,7,activa,2025-11-14T22:25:52.568536,
+249,1,Amenaza combate,AGUILA,4,en_combate,2025-11-14T22:25:52.591150,
+250,1,Amenaza resuelta,SERPIENTE,6,resuelta,2025-11-14T22:25:52.610764,2025-11-14T22:25:52.636015
+251,1,Amenaza persistencia,AGUILA,3,resuelta,2025-11-14T22:25:52.643725,2025-11-14T22:25:52.670656
+252,1,Amenaza ya resuelta,AGUILA,4,resuelta,2025-11-14T22:25:52.689711,2025-11-14T22:25:52.710464
+253,1,Amenaza en batalla,SERPIENTE,8,en_combate,2025-11-14T22:25:52.748994,
+254,1,Amenaza transición válida,SERPIENTE,6,resuelta,2025-11-14T22:25:52.785464,2025-11-14T22:25:52.811481
+255,1,Amenaza transición inválida,ARANA,3,activa,2025-11-14T22:25:52.827880,
