@@ -1,7 +1,7 @@
 import csv
 import os
 from typing import List, Optional
-from models.threat import Threat, TipoAmenaza, EstadoAmenaza
+from models.threat import Threat
 from datetime import datetime
 
 
@@ -33,7 +33,7 @@ class ThreatRepository:
                 # Aplicar filtros
                 if zona_id is not None and threat.zona_id != zona_id:
                     continue
-                if estado is not None and threat.estado.value != estado:
+                if estado is not None and threat.estado != estado:
                     continue
                     
                 threats.append(threat)
@@ -45,9 +45,9 @@ class ThreatRepository:
             id=int(data['id']),
             zona_id=int(data['zona_id']),
             nombre=data['nombre'],
-            tipo=TipoAmenaza(data['tipo']),
+            tipo=data['tipo'],  # Ya es str, sin conversión
             costo_hormigas=int(data['costo_hormigas']),
-            estado=EstadoAmenaza(data['estado']),
+            estado=data['estado'],
             hora_deteccion=datetime.fromisoformat(data['hora_deteccion']) if data['hora_deteccion'] else None,
             hora_resolucion=datetime.fromisoformat(data['hora_resolucion']) if data.get('hora_resolucion') and data['hora_resolucion'] else None
         )
@@ -58,9 +58,9 @@ class ThreatRepository:
             'id': threat.id,
             'zona_id': threat.zona_id,
             'nombre': threat.nombre,
-            'tipo': threat.tipo.value,
+            'tipo': threat.tipo,  # Ya es str
             'costo_hormigas': threat.costo_hormigas,
-            'estado': threat.estado.value,
+            'estado': threat.estado,
             'hora_deteccion': threat.hora_deteccion.isoformat() if threat.hora_deteccion else '',
             'hora_resolucion': threat.hora_resolucion.isoformat() if threat.hora_resolucion else ''
         }
