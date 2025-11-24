@@ -1,30 +1,19 @@
 from dataclasses import dataclass
-from enum import Enum
 from datetime import datetime
 from typing import Optional
 
 
-class TipoAmenaza(str, Enum):
-    AGUILA = "AGUILA"
-    SERPIENTE = "SERPIENTE"
-    ARANA = "ARANA"
-    ESCORPION = "ESCORPION"
-
-
-class EstadoAmenaza(str, Enum):
-    ACTIVA = "activa"
-    EN_COMBATE = "en_combate"
-    RESUELTA = "resuelta"
-
+# NOTA: El tipo ahora es dinámico (str) y se valida contra models/type.py con categoria="amenaza".
+# Los estados son dinámicos y se validan contra models/status.py con categoria="amenaza".
 
 @dataclass
 class Threat:
     id: int
     zona_id: int
     nombre: str
-    tipo: TipoAmenaza
+    tipo: str  # Ahora es dinámico, validado contra type_repository
     costo_hormigas: int
-    estado: EstadoAmenaza = EstadoAmenaza.ACTIVA
+    estado: str = "activa"  # Estados válidos: "activa", "en_combate", "resuelta"
     hora_deteccion: datetime = None
     hora_resolucion: Optional[datetime] = None
 

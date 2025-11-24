@@ -5,6 +5,7 @@ from fastapi.responses import JSONResponse
 import endpoints.zones__controller as zones_controller
 import endpoints.threats__controller as threats_controller
 import endpoints.resources__controller as resources_controller
+import endpoints.types__controller as types_controller
 
 ###### START THE SERVER ######
 # To run the server, use the command: uvicorn main:app --reload
@@ -33,6 +34,7 @@ app.add_middleware(
 app.include_router(zones_controller.router)
 app.include_router(resources_controller.router)
 app.include_router(threats_controller.router)
+app.include_router(types_controller.router)
 
 @app.get("/")
 async def read_root():
