@@ -1,0 +1,7 @@
+codigo,nombre,descripcion,categoria
+disponible,Disponible,Recurso listo para ser recolectado,recurso
+en_recoleccion,En recolección,Recurso siendo recolectado por hormigas trabajadoras,recurso
+recolectado,Recolectado,Recurso completamente recolectado y almacenado,recurso
+activa,Activa,Amenaza detectada y presente en la zona,amenaza
+en_combate,En combate,Amenaza siendo enfrentada por las hormigas defensoras,amenaza
+resuelta,Resuelta,Amenaza neutralizada o eliminada,amenaza
