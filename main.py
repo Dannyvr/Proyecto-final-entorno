@@ -7,6 +7,8 @@ import endpoints.threats__controller as threats_controller
 import endpoints.resources__controller as resources_controller
 from services.threat_scheduler import threat_scheduler
 from config.scheduler_config import SchedulerConfig
+from services.resource_scheduler import resource_scheduler
+from config.resources_scheduler_config import ResourcesSchedulerConfig
 
 ###### START THE SERVER ######
 # To run the server, use the command: uvicorn main:app --reload
@@ -42,12 +44,15 @@ async def startup_event():
     """Evento de inicio: inicia el scheduler de amenazas automáticas"""
     if SchedulerConfig.AUTO_START:
         threat_scheduler.start()
+    if ResourcesSchedulerConfig.AUTO_START:
+        resource_scheduler.start()
 
 
 @app.on_event("shutdown")
 async def shutdown_event():
     """Evento de cierre: detiene el scheduler de amenazas automáticas"""
     threat_scheduler.stop()
+    resource_scheduler.stop()
 
 
 @app.get("/")

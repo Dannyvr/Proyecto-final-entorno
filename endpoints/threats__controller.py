@@ -7,7 +7,7 @@ from models.threat import Threat, TipoAmenaza, EstadoAmenaza
 from repositories.threat_repository import ThreatRepository
 from repositories.zone_repository import ZoneRepository
 from services.threat_scheduler import threat_scheduler
-#from repositories.threat_repository_minimal_test_pass import ThreatRepository
+#from repositories.minimal_test_pass.threat_repository_minimal_test_pass import ThreatRepository
 router = APIRouter(prefix="/threats", tags=["threats"])
 
 threat_repo = ThreatRepository()
