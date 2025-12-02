@@ -117,14 +117,13 @@ async def eliminar_recurso(resource_id: int):
     result = resource_repo.delete(resource_id)
 
     if result == "deleted":
-        return {"message": "Recurso eliminado exitosamente"}
+        return {"message": f"El recurso {resource_id} ha sido eliminado exitosamente"}
 
     if result == "already_deleted":
-        # Reintento de eliminación -> 404 según tests (T20)
         raise HTTPException(status_code=404, detail={"error": f"El recurso {resource_id} ya fue eliminado"})
 
-    # 'never_existed' -> idempotente, devolver 200 (T19)
-    return {"message": "Recurso no existe (idempotente)"}
+    # 'never_existed' -> idempotente
+    return {"message": f"El recurso {resource_id} no existe (idempotente)"}
 
 
 # Scheduler Endpoints

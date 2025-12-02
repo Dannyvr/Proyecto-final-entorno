@@ -56,17 +56,21 @@ class ResourceRepository:
             return resource
         return None
 
-    def delete(self, resource_id: int) -> bool:
-        """Simula eliminar un recurso. Retorna True si existe, False si ya fue eliminado."""
+    def delete(self, resource_id: int) -> str:
+        """Elimina un recurso. Retorna:
+        - 'deleted' si existía y se eliminó ahora
+        - 'already_deleted' si ya fue eliminado antes
+        - 'never_existed' si nunca existió
+        """
         if resource_id in self.resources:
             del self.resources[resource_id]
             self.deleted_resources.add(resource_id)
-            return True
-        # Retorna False si ya fue eliminado
+            return "deleted"
+        
         if resource_id in self.deleted_resources:
-            return False
-        # Comportamiento idempotente para recursos que nunca existieron
-        return True
+            return "already_deleted"
+        
+        return "never_existed"
     
     def resource_name_exists_in_zone(self, nombre: str, zona_id: int) -> bool:
         """Simula verificar si un recurso con el mismo nombre ya existe en la zona"""
