@@ -3,7 +3,6 @@ from models.resource import Resource, TipoRecurso, EstadoRecurso
 from datetime import datetime
 import os
 import csv
-import tempfile
 
 class ResourceRepository:
     def __init__(self, csv_file: str = "data/resources.csv"):

@@ -45,6 +45,35 @@ El entorno desarrollado cumple con las siguientes tareas:
 - **Actualizar amenazas**: Permite actualizar el estado de la amenaza: sin atacar y en estado de ataque.
 - **Eliminar amenazas**: Permite eliminar amenazas y se rebajan del entorno.
 
+### 🤖 Generación Automática de Amenazas
+
+El sistema incluye un **scheduler de background** que genera automáticamente nuevas amenazas en intervalos regulares:
+
+- **Inicio aleatorio**: Cada vez que se inicia, comienza con un tipo de amenaza aleatorio
+- **Rotación de tipos**: Alterna entre araña 🕷️, abeja 🐝 y saltamontes 🦗
+- **Nombres secuenciales**: Genera `araña 1`, `araña 2`, `abeja 1`, `abeja 2`, etc.
+- **Configurable**: Puedes ajustar el intervalo de tiempo mediante variables de entorno
+- **Controlable**: Endpoints REST para iniciar, detener o consultar el estado del scheduler
+
+**Configuración rápida:**
+```bash
+# Cambiar intervalo a 30 segundos (default: 300)
+$env:THREAT_INTERVAL="30"
+
+# Cambiar zona donde se generan (default: 1)
+$env:DEFAULT_THREAT_ZONE="2"
+
+# Iniciar servidor
+uvicorn main:app --reload
+```
+
+**Endpoints de control del scheduler:**
+- `GET /threats/scheduler/status` - Ver estado y contadores
+- `POST /threats/scheduler/start` - Iniciar generación automática
+- `POST /threats/scheduler/stop` - Detener generación
+
+El scheduler se inicia automáticamente con el servidor y genera amenazas de forma continua en la zona configurada.
+
 ---
 
 ## 🚀 Cómo Usar el Sistema

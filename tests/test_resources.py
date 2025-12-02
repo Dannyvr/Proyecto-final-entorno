@@ -91,7 +91,7 @@ def validar_esquema_recurso(data: Dict[str, Any]):
     assert isinstance(data["id"], int)
     assert isinstance(data["zona_id"], int)
     assert isinstance(data["nombre"], str)
-    assert data["tipo"] in ["HOJA", "SEMILLA", "FLOR", "FRUTO"]
+    assert data["tipo"] in ["HOJA", "SEMILLA", "FLOR", "FRUTO", "NECTAR", "HONGO", "AGUA"]
     assert isinstance(data["cantidad_unitaria"], int)
     assert isinstance(data["peso"], int)
     assert isinstance(data["duracion_recoleccion"], int)
