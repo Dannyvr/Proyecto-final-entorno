@@ -4,6 +4,7 @@ from datetime import datetime
 
 from models.zone import Zona, TipoZona
 from repositories.zone_repository import ZoneRepository
+#from repositories.minimal_test_pass.zone_repository_minimal_test_pass import ZoneRepository
 from schemas.zone_schema import ZoneCreate, ZoneResponse  # Te explico más abajo este schema
 
 router = APIRouter(prefix="/zones", tags=["zones"])

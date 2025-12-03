@@ -3,15 +3,40 @@ from typing import Optional, List
 from datetime import datetime
 
 from schemas.resource_schema import ResourceCreate, ResourceUpdate, ResourceResponse
-from models.resource import Resource, EstadoRecurso
+from models.resource import Resource, EstadoRecurso, TipoRecurso
 from repositories.zone_repository import ZoneRepository
 from repositories.resource_repository import ResourceRepository
+#from repositories.minimal_test_pass.resource_repository_minimal_test_pass import ResourceRepository
+from services.resource_scheduler import resource_scheduler
 
 router = APIRouter(prefix="/resources", tags=["resources"])
 
 resource_repo = ResourceRepository()
 zone_repo = ZoneRepository()
 
+@router.get("/types", response_model=List[dict])
+async def obtener_tipos_recursos():
+    """Obtiene los tipos de recursos disponibles"""
+    return [
+        {
+            "codigo": tipo.value,
+            "nombre": tipo.name,
+            "descripcion": f"Recurso de tipo {tipo.name.lower()}"
+        }
+        for tipo in TipoRecurso
+    ]
+    
+@router.get("/states", response_model=List[dict])
+async def obtener_estados_recursos():
+    """Obtiene los estados de recursos disponibles"""
+    return [
+        {
+            "codigo": estado.value,
+            "nombre": estado.name,
+            "descripcion": f"Recurso en estado {estado.name.lower()}"
+        }
+        for estado in EstadoRecurso
+    ]
 
 @router.post("/zone/{zona_id}", response_model=ResourceResponse, status_code=201)
 async def crear_recurso(zona_id: int, resource_data: ResourceCreate):
@@ -92,11 +117,29 @@ async def eliminar_recurso(resource_id: int):
     result = resource_repo.delete(resource_id)
 
     if result == "deleted":
-        return {"message": "Recurso eliminado exitosamente"}
+        return {"message": f"El recurso {resource_id} ha sido eliminado exitosamente"}
 
     if result == "already_deleted":
-        # Reintento de eliminación -> 404 según tests (T20)
         raise HTTPException(status_code=404, detail={"error": f"El recurso {resource_id} ya fue eliminado"})
 
-    # 'never_existed' -> idempotente, devolver 200 (T19)
-    return {"message": "Recurso no existe (idempotente)"}
+    # 'never_existed' -> idempotente
+    return {"message": f"El recurso {resource_id} no existe (idempotente)"}
+
+
+# Scheduler Endpoints
+@router.get("/scheduler/status")
+async def estado_scheduler_recursos():
+    """Obtiene el estado actual del scheduler automático de generación de recursos"""
+    return resource_scheduler.get_status()
+
+@router.post("/scheduler/start")
+async def iniciar_scheduler_recursos():
+    """Inicia el scheduler automático de generación de recursos"""
+    resource_scheduler.start()
+    return {"message": "Scheduler de recursos iniciado exitosamente", "status": resource_scheduler.get_status()}
+    
+@router.post("/scheduler/stop")
+async def detener_scheduler_recursos():
+    """Detiene el scheduler automático de generación de recursos"""
+    resource_scheduler.stop()
+    return {"message": "Scheduler de recursos detenido exitosamente", "status": resource_scheduler.get_status()}

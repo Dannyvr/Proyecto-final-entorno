@@ -57,16 +57,14 @@ def test_crear_amenaza_costo_invalido(costo_invalido):
 
 
 def test_crear_amenaza_tipo_invalido():
-    """T5: El sistema ahora acepta cualquier tipo dinámico - este test verifica que tipos personalizados funcionan"""
+    """T5: Debe rechazar tipos no válidos con 400 (sistema de enums estáticos)"""
     response = client.post("/threats/zone/1", json={
         "nombre": "Amenaza desconocida",
         "tipo": "DINOSAURIO",
         "costo_hormigas": 10
     })
-    # Con sistema dinámico, cualquier tipo es válido
-    assert response.status_code == 201
-    data = response.json()
-    assert data["tipo"] == "DINOSAURIO"
+    # Con sistema de enums, solo tipos definidos son válidos
+    assert response.status_code == 400
 
 
 def test_listar_amenazas_retorna_lista():

@@ -9,6 +9,9 @@ class TipoRecurso(str, Enum):
     SEMILLA = "SEMILLA"
     FLOR = "FLOR"
     FRUTO = "FRUTO"
+    NECTAR = "NECTAR"
+    HONGO = "HONGO"
+    AGUA = "AGUA"
 
 
 class EstadoRecurso(str, Enum):
@@ -28,7 +31,7 @@ class Resource:
     duracion_recoleccion: int
     hormigas_requeridas: int
     estado: EstadoRecurso = EstadoRecurso.DISPONIBLE
-    hora_creacion: datetime = None
+    hora_creacion: Optional[datetime] = None
     hora_recoleccion: Optional[datetime] = None
 
     def __post_init__(self):
