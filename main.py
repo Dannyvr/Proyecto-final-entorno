@@ -2,6 +2,8 @@ from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from scheduled_tasks.resources_check_task import resources_completion_task
+from apscheduler.schedulers.background import BackgroundScheduler
 import endpoints.zones__controller as zones_controller
 import endpoints.threats__controller as threats_controller
 import endpoints.resources__controller as resources_controller
@@ -15,6 +17,20 @@ from config.resources_scheduler_config import ResourcesSchedulerConfig
 
 app = FastAPI()
 
+scheduler = BackgroundScheduler()
+
+@app.on_event("startup")
+def start_scheduler():
+    print("Starting scheduler...")
+    scheduler.add_job(resources_completion_task, "interval", minutes=2)
+    scheduler.start()
+    print("Scheduler started")
+
+@app.on_event("shutdown")
+def stop_scheduler():
+    print("Stopping scheduler...")
+    scheduler.shutdown()
+    print("Scheduler stopped")
 
 # Manejador global para convertir 422 a 400
 @app.exception_handler(RequestValidationError)
