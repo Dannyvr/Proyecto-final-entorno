@@ -1,10 +1,11 @@
 from pydantic import BaseModel
 from datetime import datetime
 from models.zone import TipoZona
+from typing import Optional
 
 
 class ZoneCreate(BaseModel):
-    id: int
+    id: Optional[int] = None
     nombre: str
     tipo: TipoZona
 

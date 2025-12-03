@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
 from datetime import datetime
+import time
 
 from models.zone import Zona, TipoZona
 from repositories.zone_repository import ZoneRepository
@@ -15,12 +16,17 @@ zone_repo = ZoneRepository()
 @router.post("", response_model=ZoneResponse, status_code=201)
 async def crear_zona(zone_data: ZoneCreate):
     """Crea una nueva zona"""
+
+    zone_id = zone_data.id
+    if zone_id is None:
+        zone_id = int(time.time())
+
     # Verificar si ya existe una zona con ese ID (si viene del cliente)
-    if zone_repo.zone_exists(zone_data.id):
-        raise HTTPException(status_code=400, detail={"error": f"La zona con id {zone_data.id} ya existe"})
+    if zone_repo.zone_exists(zone_id):
+        raise HTTPException(status_code=400, detail={"error": f"La zona con id {zone_id} ya existe"})
 
     zona = Zona(
-        id=zone_data.id,
+        id=zone_id,
         nombre=zone_data.nombre,
         tipo=zone_data.tipo,
         fecha_creacion=datetime.now()

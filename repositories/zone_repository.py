@@ -20,14 +20,26 @@ class ZoneRepository:
 
     def zone_exists(self, zone_id: int) -> bool:
         """Verifica si una zona existe"""
+
         if not os.path.exists(self.csv_file):
             return False
 
         with open(self.csv_file, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
-                if int(row['id']) == zone_id:
-                    return True
+                raw_id = row.get('id')
+
+                # Ignorar IDs vacíos o None
+                if not raw_id or raw_id.strip() == "":
+                    continue
+
+                try:
+                    if int(raw_id) == zone_id:
+                        return True
+                except ValueError:
+                    # Si el CSV tiene basura (ej: texto donde debería haber un número)
+                    continue
+
         return False
 
     def crearZona(self, zona: Zona) -> None:
