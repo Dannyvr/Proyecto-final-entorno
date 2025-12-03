@@ -5,3 +5,4 @@ pytest-cov
 httpx
 pydantic
 APScheduler==3.10.4
+requests
