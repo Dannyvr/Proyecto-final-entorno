@@ -113,3 +113,8 @@ class ZoneRepository:
                     fecha_creacion=datetime.strptime(row['fecha_creacion'], '%Y-%m-%d %H:%M:%S')
                 ))
         return zonas
+    
+    def obtenerZonasPorTipo(self, tipo: TipoZona) -> List[Zona]:
+        """Devuelve una lista con las zonas filtradas por tipo"""
+        zonas = self.obtenerTodasLasZonas()
+        return [zona for zona in zonas if zona.tipo == tipo]

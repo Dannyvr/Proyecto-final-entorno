@@ -42,6 +42,13 @@ async def listar_zonas():
     zonas = zone_repo.obtenerTodasLasZonas()
     return zonas
 
+@router.get("/tipo/{tipo_zona}", response_model=List[ZoneResponse])
+async def listar_zonas_por_tipo(tipo_zona: str):
+    """Lista todas las zonas filtradas por tipo"""
+    tipo = TipoZona(tipo_zona)
+    zonas = zone_repo.obtenerZonasPorTipo(tipo)
+    return zonas
+
 
 @router.get("/{zona_id}", response_model=ZoneResponse)
 async def obtener_zona(zona_id: int):

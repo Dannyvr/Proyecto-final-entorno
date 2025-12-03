@@ -50,4 +50,13 @@ class ZoneRepository:
         )
         return [zona1, zona2]
 
+    def obtenerZonasPorTipo(self, tipo: TipoZona) -> List[Zona]:
+        """Simula devolver zonas por tipo"""
+        zona = Zona(
+            id=2,
+            nombre="Zona de arena",
+            tipo=TipoZona.ARENA,
+            fecha_creacion=datetime.now()
+        )
+        return [zona] if tipo == TipoZona.ARENA else []
     

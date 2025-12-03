@@ -73,6 +73,22 @@ def test_listar_zonas_retorna_lista():
     #remover la zona creada para no afectar otros tests
     client.delete("/zones/200")
 
+def test_listar_zonas_por_tipo():
+    """Debe devolver una lista de zonas filtradas por tipo"""
+    # Crear zonas de diferentes tipos
+    client.post("/zones", json={"id": 400, "nombre": "Zona Playa", "tipo": "ARENA"})
+    client.post("/zones", json={"id": 401, "nombre": "Zona Montaña", "tipo": "ROCA"})
+
+    response = client.get("/zones/tipo/ARENA")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    assert all(zona["tipo"] == "ARENA" for zona in data)
+
+    # Remover las zonas creadas para no afectar otros tests
+    client.delete("/zones/400")
+    client.delete("/zones/401")
+
 
 def test_obtener_zona_por_id_exito():
     """Debe devolver los detalles de una zona existente"""

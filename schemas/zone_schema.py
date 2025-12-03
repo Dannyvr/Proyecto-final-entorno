@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from models.zone import TipoZona
 from typing import Optional
@@ -16,5 +16,4 @@ class ZoneResponse(BaseModel):
     tipo: TipoZona
     fecha_creacion: datetime
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
